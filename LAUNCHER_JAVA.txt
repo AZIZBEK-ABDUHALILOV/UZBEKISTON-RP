@@ -1,0 +1,14 @@
+// Launcher (AIDE) ichida: uz/samp/Native.java
+package uz.samp;
+
+public class Native {
+    static { System.loadLibrary("samp"); }
+    public static native void setServer(String ip, int port, String nick);
+}
+
+// O'yinni ochishdan oldin chaqiring:
+// Native.setServer("IP", 7777, "Nik");
+//
+// libsamp.so ni APK ichida shu yerga qo'ying:
+//   lib/arm64-v8a/libsamp.so
+//   lib/armeabi-v7a/libsamp.so
